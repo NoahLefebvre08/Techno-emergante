@@ -1,7 +1,7 @@
 # Image de base : Node.js version 16 sur Alpine Linux (très légère)
 FROM node:16-alpine
 
-RUN apk add --no-cache git
+RUN apk add --no-cache git openssh-client
 # Définit le répertoire de travail dans le conteneur
 WORKDIR /app
 
